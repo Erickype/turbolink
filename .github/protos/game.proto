@@ -52,7 +52,7 @@ message RoomResponse {
   int32 y = 2;
   int32 z = 3;
   string room_id = 4;
-  string terrain = 5;
+  bool discovered = 5;
   bool data = 6;
 }
 
