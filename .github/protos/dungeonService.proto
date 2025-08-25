@@ -19,5 +19,5 @@ message GenerateDungeonRequest{
 }
 
 message GenerateDungeonResponse{
-  repeated GridLine grid_lines = 1;
+  repeated common.GridLine grid_lines = 1;
 }
