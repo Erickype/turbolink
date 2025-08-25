@@ -4,6 +4,8 @@ package dungeon;
 
 option go_package = "github.com/Erickype/DungeonPit/pkg/gen/dungeon";
 
+import "protos/geometry.proto";
+
 service DungeonService{
   rpc GenerateDungeon(GenerateDungeonRequest) returns (GenerateDungeonResponse);
 }
@@ -17,5 +19,5 @@ message GenerateDungeonRequest{
 }
 
 message GenerateDungeonResponse{
-  repeated GridLine grid_lines = 1;
+  repeated common.GridLine grid_lines = 1;
 }
